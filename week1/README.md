@@ -17,6 +17,8 @@ Write a `todo.sql` file and put it in the homework folder where you create the d
 structure from you ERD. Make sure you can use the `source` command in MySQL to create
 the database.
 
+**  Answer - The diagram**
+![Todo App ERD](diagram.png)
 
 ## World database queries
 
