@@ -18,7 +18,8 @@ structure from you ERD. Make sure you can use the `source` command in MySQL to c
 the database.
 
 **Answer - The diagram**
-`<br>`
+<br>
+
 ![Todo App ERD](diagram.png)
 
 ## World database queries
@@ -47,5 +48,3 @@ homework/world-queries.txt
 8. Which languages are spoken in the Region of 'South America'?
 
 9. What are the languages spoken on all cities named 'Barcelona'?
-
-
