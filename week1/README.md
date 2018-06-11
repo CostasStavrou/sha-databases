@@ -11,17 +11,20 @@ a user can:
 - Add tags to the TODO items, like `homework`, `groceries` etc...
 - Mark a TODO item as done
 
+**Answer - The diagram**
+<br>
+
+![Todo App ERD](diagram.png)
+
 **Bonus round:**
 
 Write a `todo.sql` file and put it in the homework folder where you create the database
 structure from you ERD. Make sure you can use the `source` command in MySQL to create
 the database.
 
-**Answer - The diagram**
+**Answer - The .sql file**
 <br>
-
-![Todo App ERD](diagram.png)
-
+[`source` file to create the database and the tables](todoapp.sql)
 ## World database queries
 
 Create a database called `world` and `source` the SQL data from the
