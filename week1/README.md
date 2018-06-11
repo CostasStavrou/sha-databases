@@ -81,11 +81,11 @@ homework/world-queries.txt
 
    On the instructions it gives a hint to JOIN 3 tables like the following:
 
-`   SELECT DISTINCT countrylanguage.Language`<br>
-`     FROM city JOIN country`<br>
-`     ON city.CountryCode=country.Code`<br>
-`     JOIN countrylanguage`<br>
-`     ON city.CountryCode=countrylanguage.CountryCode`<br>
-`     WHERE city.Name='Barcelona';`
+   `   SELECT DISTINCT countrylanguage.Language`<br>
+   `     FROM city JOIN country`<br>
+   `     ON city.CountryCode=country.Code`<br>
+   `     JOIN countrylanguage`<br>
+   `     ON city.CountryCode=countrylanguage.CountryCode`<br>
+   `     WHERE city.Name='Barcelona';`
 
-   but in this case it is not needed.
+      but in this case it is not needed.
