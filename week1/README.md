@@ -126,4 +126,4 @@ homework/world-queries.txt
         WHERE city.Name='Barcelona';
 ```
 
-      but in this case it is not needed.
+  but in this case it is not needed.
