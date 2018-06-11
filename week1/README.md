@@ -117,13 +117,13 @@ homework/world-queries.txt
 
    On the instructions it gives a hint to JOIN 3 tables like the following:
 
-   ```sql
+```sql
      SELECT DISTINCT countrylanguage.Language
         FROM city JOIN country
         ON city.CountryCode=country.Code
         JOIN countrylanguage
         ON city.CountryCode=countrylanguage.CountryCode
         WHERE city.Name='Barcelona';
-    ```
+```
 
       but in this case it is not needed.
