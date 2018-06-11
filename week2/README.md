@@ -12,7 +12,7 @@ rest of the function on the Model (`create`, `update`, `delete`, `tagTodoItem`,
 
 **Answer**
 
-The code is in file [step1.js](step1.js])
+The code is in file [step1.js](step1.js)
 
 Of course, being a Node.js application first we initialize it
 with `npm init` and install the necessary module with `npm install mysql`.
