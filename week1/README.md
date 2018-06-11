@@ -35,9 +35,9 @@ homework/world-queries.txt
 
 1. What are the names of all the cities in the Netherlands?<br>
    **Answer**<br>
-`   SELECT city.Name FROM city JOIN country<br>
-     ON city.CountryCode=country.Code<br>
-     WHERE country.Name='Netherlands';`
+`   SELECT city.Name FROM city JOIN country`<br>
+`     ON city.CountryCode=country.Code`<br>
+`     WHERE country.Name='Netherlands';`
 
 2. What is the population of Rotterdam?<br>
    **Answer**<br>
@@ -57,33 +57,35 @@ homework/world-queries.txt
 
 6. Select the top 3 countries by population that their names start with the letter 'P'<br>
    **Answer**<br>
-`   SELECT country.Name FROM country<br>
-     WHERE country.name LIKE 'P%' ORDER BY country.Population DESC LIMIT 3;`
+`   SELECT country.Name FROM country`<br>
+`     WHERE country.name LIKE 'P%' ORDER BY country.Population DESC LIMIT 3;`
 
 7. What is the population in Asia?<br>
    **Answer**<br>
-`   SELECT SUM(country.Population) AS 'Population in Asia'<br>
-     FROM country WHERE country.Continent='Asia';`
+`   SELECT SUM(country.Population) AS 'Population in Asia'`<br>
+`     FROM country WHERE country.Continent='Asia';`
 
 8. Which languages are spoken in the Region of 'South America'?<br>
    **Answer**<br>
-`   SELECT DISTINCT countrylanguage.Language<br>
-     FROM countrylanguage JOIN country<br>
-     ON countrylanguage.CountryCode=country.Code<br>
-     WHERE country.Region='South America';`
+`   SELECT DISTINCT countrylanguage.Language`<br>
+`     FROM countrylanguage JOIN country`<br>
+`     ON countrylanguage.CountryCode=country.Code`<br>
+`     WHERE country.Region='South America';`
 
 9. What are the languages spoken on all cities named 'Barcelona'?<br>
    **Answer**<br>
-`   SELECT DISTINCT countrylanguage.Language<br>
-     FROM city JOIN countrylanguage ON city.CountryCode=countrylanguage.CountryCode<br>
-     WHERE city.Name='Barcelona';`
+`   SELECT DISTINCT countrylanguage.Language`<br>
+`     FROM city JOIN countrylanguage`<br>
+`     ON city.CountryCode=countrylanguage.CountryCode`<br>
+`     WHERE city.Name='Barcelona';`
 
    On the instructions it gives a hint to JOIN 3 tables like the following:
 
-`   SELECT DISTINCT countrylanguage.Language<br>
-     FROM city JOIN country<br>
-     ON city.CountryCode=country.Code<br>
-     JOIN countrylanguage ON city.CountryCode=countrylanguage.CountryCode<br>
-     WHERE city.Name='Barcelona';`
+`   SELECT DISTINCT countrylanguage.Language`<br>
+`     FROM city JOIN country`<br>
+`     ON city.CountryCode=country.Code`<br>
+`     JOIN countrylanguage`<br>
+`     ON city.CountryCode=countrylanguage.CountryCode`<br>
+`     WHERE city.Name='Barcelona';`
 
    but in this case it is not needed.
