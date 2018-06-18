@@ -23,7 +23,7 @@ the database contains just a few entries.
 It can be used (of course) with the [Node.js mysql2 module](https://www.npmjs.com/package/mysql2) just by changing the module
 name in line 5 of the step1.js file.
 
-** Note: Don't use the included package.json with this. It is for step3.js **
+*Note: Don't use the included package.json with this. It is for step3.js*
 
 ## Adding a new database user
 
