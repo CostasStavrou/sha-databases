@@ -127,3 +127,10 @@ homework/world-queries.txt
 ```
 
   but in this case it is not needed.
+
+
+
+  # License and Copyright
+
+  Unless explicitly specified all this is copyrighted by Costas Stavrou, the
+  author of these Github pages and GPL-3 licensed.
