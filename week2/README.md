@@ -23,6 +23,8 @@ the database contains just a few entries.
 It can be used (of course) with the [Node.js mysql2 module](https://www.npmjs.com/package/mysql2) just by changing the module
 name in line 5 of the step1.js file.
 
+** Note: Don't use the included package.json with this. It is for step3.js **
+
 ## Adding a new database user
 
 Until now we've always connected to the database as root. We don't want to allow
@@ -47,7 +49,34 @@ GRANT SELECT, INSERT, UPDATE, DELETE, EXECUTE on todo_app.* TO 'nodetodoapp'@'lo
 FLUSH PRIVILEGES;
 ```
 
-## Bonus assignment
+## Bonus assignment (not part of the SocialHackersAcademy assignment)
 
 Combine this Model with the final project from the Node.js module. More
 information on the [third week's homework](https://github.com/SocialHackersCodeSchool/Node.js/tree/master/week3)
+of the Node.js SocialHackersAcademy module.
+
+**Answer**
+
+The code is in file [step3.js](step3.js)
+
+Implementation details / differences with the above mentioned exercise:
+- In the code [mysql2](https://www.npmjs.com/package/mysql2) Node.js module
+is used. It is API compatible for what this exercise needs/uses with the
+[mysql](https://www.npmjs.com/package/mysql) module.
+- I follow the CRUD model of the database exercise and not the REST API of
+the Node.js project from the SocialHackersAcademy assignment. I changed
+the REST API accordingly.
+- Promises used to put things in order as needed.
+- The front-end part is non-existant. Testing was done by using [Postman](https://www.getpostman.com/).
+- Everything is kept very simple. This is not to make the most performant
+or optimized implementation. It is built for educational purposes, as the
+next step in a node + sql class.
+
+To run this:
+- npm install
+- node step3.js
+
+# License and Copyright
+
+Unless explicitly specified all this is copyrighted by Costas Stavrou, the
+author of these Github pages and GPL-3 licensed.
