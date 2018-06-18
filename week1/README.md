@@ -130,7 +130,7 @@ homework/world-queries.txt
 
 
 
-  # License and Copyright
+# License and Copyright
 
-  Unless explicitly specified all this is copyrighted by Costas Stavrou, the
-  author of these Github pages and GPL-3 licensed.
+Unless explicitly specified all this is copyrighted by Costas Stavrou, the
+author of these Github pages and GPL-3 licensed.
